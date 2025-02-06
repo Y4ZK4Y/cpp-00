@@ -1,4 +1,4 @@
-CC = clang++
+CC = c++
 CFLAGS = -Wall -Wextra -Werror
 
 NAME = account

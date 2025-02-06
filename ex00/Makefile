@@ -3,8 +3,8 @@ NAME := megaphone
 SRC := megaphone.cpp
 OBJ := $(SRC:.cpp=.o)
 
-CC := clang++
-CFLAGS := -Wall -Wextra -Werror -std=c++98
+CC := c++
+CFLAGS := -Wall -Wextra -Werror
 
 RM = /bin/rm -rf
 

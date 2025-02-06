@@ -57,5 +57,5 @@ On startup, the phonebook is empty. The user must enter one of **three commands*
 - **Invalid inputs are ignored.**  
 - After executing a command, the program **waits for another command**.  
 - The program **only stops** when the user types `EXIT`.  
-- Choose a **relevant name** for your executable file.  
+
 
