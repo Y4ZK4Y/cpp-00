@@ -1,34 +1,15 @@
-## Exercise 02: The Job Of Your Dreams
+## Exercise 02: The Job Of Your Dreams  
 
-Welcome to your first day at **GlobalBanksters United**! You landed this job thanks to your impressive Microsoft Office tricks and lightning-fast Adobe Reader installation skills. But now, it’s time to prove your worth as a developer.
+### Description  
 
-### Requirements
+In this exercise, I had to step into the role of a new developer at **GlobalBanksters United**, where a critical source file, `Account.cpp`, was accidentally deleted. Without access to version control (because they still use USB keys instead of Git), my task was to **reconstruct the missing file** using the provided `Account.hpp` header file, a test file (`tests.cpp`), and a log containing past program outputs.  
 
-- **Turn-in directory:** `ex02/`
-- **Files to turn in:** `Makefile`, `Account.cpp`, `Account.hpp`, `tests.cpp`
-- **Forbidden functions:** None  
-- **Provided files:** `Account.hpp`, `tests.cpp`, and a log file (available for download on the intranet).  
+The challenge was to:  
+- Analyze the **header file (`Account.hpp`)** to understand the class structure.  
+- Use the **test file (`tests.cpp`)** to figure out what functions needed to be implemented.  
+- Compare the program’s output to the provided **log file** to ensure correctness (excluding timestamps, which naturally varied).  
+- Ensure destructors were handled correctly, even though their execution order might differ depending on the compiler.  
 
-### The Challenge
+### What I Learned  
 
-Disaster struck! A **source file (`Account.cpp`) was accidentally deleted**.  
-Your new colleagues, who still rely on USB keys instead of Git, need your help to **recreate the missing file**.  
-
-Luckily, you have:  
-- The header file: `Account.hpp`  
-- A log file containing past program output  
-- The test file: `tests.cpp`, which reveals what functions the missing `Account.cpp` file should implement  
-
-You accept the challenge!  
-
-### Your Mission
-
-1. **Analyze `Account.hpp` and `tests.cpp`** to understand the class structure.  
-2. **Reimplement `Account.cpp`** based on the test cases and function prototypes.  
-3. **Compare the program’s output to the log file** to ensure correct functionality.  
-4. **Handle timestamps correctly** – since the tests in the log file were run before you were hired, timestamp differences are expected.  
-
-### Additional Notes
-
-- The **order of destructor calls** may vary depending on the **compiler and operating system**.  
-- The program passes when its output (except timestamps) **perfectly matches** the log file.  
+By completing this exercise, I improved my **ability to analyze existing code and implement missing functionality** in a structured way.

@@ -1,6 +1,6 @@
 ## Exercise 01: My Awesome PhoneBook
 
-Welcome to the 80s and their unbelievable technology! In this exercise, you will create a program that behaves like a **crappy awesome** phonebook software.
+This exercise is about creating an 80s style phonebook that behaves like a **crappy awesome** phonebook software.
 
 ### Requirements
 
@@ -10,7 +10,7 @@ Welcome to the 80s and their unbelievable technology! In this exercise, you will
 
 ### Description
 
-You need to implement two classes:
+There will be 2 classes:
 
 #### **PhoneBook**
 - Contains an array of contacts.
