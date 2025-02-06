@@ -2,7 +2,6 @@ NAME := phonebook
 
 SRC := Contact.cpp PhoneBook.cpp main.cpp
 OBJ := $(SRC:.cpp=.o)
-#INCLUDLES := Contact.h PhoneBook.h
 
 CC := c++
 CFLAGS := -Wall -Wextra -Werror
@@ -25,5 +24,4 @@ fclean: clean
 
 re: fclean all
 
-# Phony
 .PHONY: all clean fclean re
