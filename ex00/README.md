@@ -10,19 +10,17 @@ In this exercise, the goal is to write a program that behaves as a megaphone. Th
 
 ### Behavior
 
-When provided with a string argument:
-   ```bash
-   $> ./megaphone "shhhhh... I think the students are asleep..."
-   SHHHHH... I THINK THE STUDENTS ARE ASLEEP...
-   ```bash
+#### When provided with a string argument:
+```bash
+$> ./megaphone "shhhhh... I think the students are asleep..."
+SHHHHH... I THINK THE STUDENTS ARE ASLEEP...
 
-When provided with multiple string arguments:
-    ```bash
-    $> ./megaphone Damnit " ! " "Sorry students, I thought this thing was off."
-    DAMNIT ! SORRY STUDENTS, I THOUGHT THIS THING WAS OFF.
-    ```bash
+#### When provided with multiple string arguments:
+```bash
+$> ./megaphone Damnit " ! " "Sorry students, I thought this thing was off."
+DAMNIT ! SORRY STUDENTS, I THOUGHT THIS THING WAS OFF.
 
-If no arguments are provided:
-    ```bash
+#### If no arguments are provided:
+```bash
 $> ./megaphone
 * LOUD AND UNBEARABLE FEEDBACK NOISE *
