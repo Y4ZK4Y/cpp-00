@@ -1,23 +1,12 @@
 #include "PhoneBook.h"
 #include <iostream>
-#include <iomanip> // output formatting - read about
-
-// Implementing the member functions for the PhoneBook class
-// the PhoneBook::PhoneBook() part indicates that this is a constructor
-// we're using initilization list
-// consturctr body is empty in thi case
-//  we dont need to explicitly mention the contacts aray that was 
-// in the phonebook class
-// why ?
-//handled automatically by the compliler 
-// this happens for array of objects
-//
+#include <iomanip>
 
 
 // Constructor
 PhoneBook::PhoneBook()
     : contacts(), nextContactIndex(0) {
-    //initializing nextcontactnedx to zero since phonebook empty
+    //initializing nextcontactindex to zero since phonebook empty
     for (int i = 0; i < 8; ++i) {
         contacts[i] = Contact("", "", "", "", "");
     }

@@ -3,28 +3,16 @@
 #include <iomanip>
 #include <ctime>
 
-
-/*
-tatic members of a class are shared among all instances of that class. This means that there is
- only one copy of each static member, regardless of how 
- many objects of the class are created. Static members are often used to keep track of 
- information that is common to all objects of the class.
-*/
-
-// Initialize static member variables of the class - 
-///static members are shared among all instances of the class
-// static members need tio be defined outside of the class definition to have memory allocated for them
-
 int Account::_nbAccounts = 0;
 int Account::_totalAmount = 0;
 int Account::_totalNbDeposits = 0;
 int Account::_totalNbWithdrawals = 0;
 
 
-//constructor for the class 
-// initializes account with initial deposit
-// constructor initialzies member variables and updates static counters
-// it also prints a message indicating the creation of a neew account
+/* constructor for the class 
+    initializes account with initial deposit
+    constructor initializies member variables and updates static counters
+    it also prints a message indicating the creation of a new account */
 
 // Constructor
 Account::Account(int initial_deposit) : _accountIndex(_nbAccounts), _amount(initial_deposit), _nbDeposits(0), _nbWithdrawals(0) {
@@ -35,10 +23,11 @@ Account::Account(int initial_deposit) : _accountIndex(_nbAccounts), _amount(init
 }
 
 
-
-// Destructor
-// cleans up when an account object is destroyed
-// updates static counters and prints a message
+/*
+    Destructor
+    cleans up when an account object is destroyed
+    updates static counters and prints a message
+*/
 Account::~Account() {
     _displayTimestamp();
     std::cout << "index:" << _accountIndex << ";amount:" << _amount << ";closed" << std::endl;
@@ -48,8 +37,6 @@ Account::~Account() {
 
 
 // Static methods
-// static methods can be called without an instance of the class
-
 int Account::getNbAccounts() {
     return _nbAccounts;
 }

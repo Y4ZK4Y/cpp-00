@@ -16,9 +16,8 @@ public:
     // Construuctor
     PhoneBook();
 
-    // add a new ocntact
     void addContact(const Contact& contact);
-    void searchContact() const; // a read-only function
+    void searchContact() const;
     void displayContacts(const Contact& contact) const;
 };
 
