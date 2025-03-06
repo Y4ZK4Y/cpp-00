@@ -4,7 +4,6 @@
 # include "Contact.h"
 
 class PhoneBook {
-
 private:
     // an array to store contacts - fixed size of 8 (as per subject)
     Contact contacts[8];
@@ -13,14 +12,11 @@ private:
     int nextContactIndex;
 
 public:
-    // Construuctor
+    // Constructor
     PhoneBook();
-
     void addContact(const Contact& contact);
     void searchContact() const;
     void displayContacts(const Contact& contact) const;
 };
-
-
 
 #endif

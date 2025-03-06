@@ -8,12 +8,6 @@ int Account::_totalAmount = 0;
 int Account::_totalNbDeposits = 0;
 int Account::_totalNbWithdrawals = 0;
 
-
-/* constructor for the class 
-    initializes account with initial deposit
-    constructor initializies member variables and updates static counters
-    it also prints a message indicating the creation of a new account */
-
 // Constructor
 Account::Account(int initial_deposit) : _accountIndex(_nbAccounts), _amount(initial_deposit), _nbDeposits(0), _nbWithdrawals(0) {
     _nbAccounts++;
@@ -34,7 +28,6 @@ Account::~Account() {
     _nbAccounts--;
     _totalAmount -= _amount;
 }
-
 
 // Static methods
 int Account::getNbAccounts() {
@@ -57,7 +50,6 @@ void Account::displayAccountsInfos() {
     _displayTimestamp();
     std::cout << "accounts:" << getNbAccounts() << ";total:" << getTotalAmount() << ";deposits:" << getNbDeposits() << ";withdrawals:" << getNbWithdrawals() << std::endl;
 }
-
 
 
 // Member methods

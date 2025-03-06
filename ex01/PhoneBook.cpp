@@ -2,11 +2,10 @@
 #include <iostream>
 #include <iomanip>
 
-
 // Constructor
 PhoneBook::PhoneBook()
     : contacts(), nextContactIndex(0) {
-    //initializing nextcontactindex to zero since phonebook empty
+    //initializing nextcontactindex to zero
     for (int i = 0; i < 8; ++i) {
         contacts[i] = Contact("", "", "", "", "");
     }
@@ -29,7 +28,7 @@ void PhoneBook::searchContact() const {
     std::cout << "|     Index|First Name|last Name|Nickname" << std::endl;
     std::cout << "|-------------------------------------------|" << std::endl;
 
-    //display all contacts in a table
+    // display all contacts in a table
     for (int i = 0; i < 8; i++) {
         std::cout << "|" << std::setw(10) << i + 1 << "|";
         std::cout << std::setw(10) << contacts[i].getFirstName() << "|";
@@ -50,7 +49,6 @@ void PhoneBook::searchContact() const {
         std::cout << "Contact does not exist" << std::endl;
     }
 }
-
 
 void PhoneBook::displayContacts(const Contact& contacts) const {
     std::cout << "First Name: " << contacts.getFirstName() << std::endl;
